@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Наша команда</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 20px 40px;
+
+            /*
+                TODO 1
+
+                Расположите логотип и меню
+                по разным сторонам header.
+
+                Используйте Flexbox.
+            */
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            /*
+                TODO 2
+
+                Сделайте пункты меню горизонтальными.
+                Расстояние между пунктами: 20px.
+            */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            min-height: 300px;
+            padding: 40px;
+            background: #71c3cb;
+
+            /*
+                TODO 3
+
+                Расположите содержимое секции
+                по центру страницы:
+
+                - по горизонтали;
+                - по вертикали.
+
+                Подсказка:
+                display: flex;
+            */
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .team {
+            /*
+                TODO 4
+
+                Карточки должны находиться
+                в одной строке.
+
+                Между карточками должен быть
+                промежуток 20px.
+
+                Если места становится мало,
+                карточки должны переноситься
+                на следующую строку.
+            */
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+
+            /*
+                TODO 5
+
+                Сделайте ширину карточки примерно 250px.
+
+                Подсказка:
+                можно использовать flex-basis.
+            */
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #ddd;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 30px 40px;
+            background: #222;
+            color: white;
+
+            /*
+                TODO 6
+
+                Расположите текст и ссылки
+                по разным сторонам footer.
+            */
+        }
+
+        .footer-links {
+            /*
+                TODO 7
+
+                Сделайте ссылки горизонтальными.
+
+                Расстояние между ними: 15px.
+            */
+        }
+
+        footer a {
+            color: #71c3cb;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        FlexTeam
+    </div>
+
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">Команда</a>
+        <a href="#">Проекты</a>
+        <a href="#">Контакты</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Наша команда</h1>
+
+        <p>
+            Мы изучаем HTML, CSS, Git и Flexbox.
+            Эта страница станет немного красивее после выполнения задания.
+        </p>
+
+    </div>
+
+</section>
+
+
+<main>
+
+    <h2>Участники команды</h2>
+
+    <div class="team">
+
+        <div class="card">
+            <div class="avatar"></div>
+
+            <h3>Анна</h3>
+
+            <p>
+                Frontend Developer
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="avatar"></div>
+
+            <h3>Максим</h3>
+
+            <p>
+                Backend Developer
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="avatar"></div>
+
+            <h3>София</h3>
+
+            <p>
+                UI/UX Designer
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="avatar"></div>
+
+            <h3>Алексей</h3>
+
+            <p>
+                Project Manager
+            </p>
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div>
+        FlexTeam © 2026
+    </div>
+
+    <div class="footer-links">
+        <a href="#">GitHub</a>
+        <a href="#">Telegram</a>
+        <a href="#">Email</a>
+    </div>
+
+</footer>
+
+</body>
+</html>
